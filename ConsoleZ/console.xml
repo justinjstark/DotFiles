@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <settings>
-	<console change_refresh="10" refresh="100" rows="25" columns="80" buffer_rows="500" buffer_columns="0" shell="&quot;C:\Program Files\Git\bin\sh.exe&quot; --login -i" init_dir="C:\Git" start_hidden="1" save_size="0">
+	<console change_refresh="10" refresh="100" rows="25" columns="80" buffer_rows="500" buffer_columns="0" shell="C:\Program Files\Git\usr\bin\sh.exe --login -i" init_dir="C:\Git" start_hidden="1" save_size="0">
 		<colors background_text_opacity="255">
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
@@ -144,7 +144,20 @@
 	</mouse>
 	<tabs>
 		<tab title="Git Bash" icon="C:\Program Files\Git\git-bash.exe" use_default_icon="0">
-			<console shell="&quot;C:\Program Files\Git\bin\sh.exe&quot; --login -i" init_dir="C:\Git" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="&quot;C:\Program Files\Git\usr\bin\sh.exe&quot; --login -i" init_dir="C:\Git" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0">
+				<env var="TFS" value="http://lnkas12:8080/tfs/System%20Development" check="1"/>
+			</console>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="Git Bash (Admin)" icon="C:\Program Files\Git\git-bash.exe" use_default_icon="0">
+			<console shell="&quot;C:\Program Files\Git\usr\bin\sh.exe&quot; --login -i" init_dir="C:\Git" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="1">
+				<env var="TFS" value="http://lnkas12:8080/tfs/System%20Development" check="1"/>
+			</console>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
